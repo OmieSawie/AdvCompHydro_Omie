@@ -6,20 +6,20 @@
 namespace plt = matplotlibcpp;
 
 int main() {
-  freopen("output.txt", "r", stdin);
+  freopen("./outputProfile.txt", "r", stdin);
   // freopen("output.txt","w",stdout);
   std::ios_base::sync_with_stdio(false);
   std::cin.tie(NULL);
   int nDivs = 0;
   std::cin >> nDivs;
-  nDivs;
   std::vector<double> heights(nDivs);
   for (int i = 0; i < nDivs; i++) {
     std::cin >> heights[i];
   }
   std::vector<double> distance(nDivs);
   for (int i = 0; i < nDivs; i++) {
-    std::cin >> distance[i];
+    // std::cin >> distance[i];
+    distance[i] = i;
   }
 
   plt::plot(distance, heights, {{"label", "Height"}});
