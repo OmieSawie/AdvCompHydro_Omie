@@ -18,8 +18,7 @@ int main() {
   }
   std::vector<double> distance(nDivs);
   for (int i = 0; i < nDivs; i++) {
-    // std::cin >> distance[i];
-    distance[i] = i;
+    std::cin >> distance[i];
   }
 
   plt::plot(distance, heights, {{"label", "Concentration"}});

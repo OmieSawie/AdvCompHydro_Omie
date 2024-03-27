@@ -1,3 +1,7 @@
-g++ concPlotter.cpp -o concPlotter -std=c++11 -DWITHOUT_NUMPY -I/usr/include/python3.11 -lpython3.11
+g++ ./Pollutant_concentration.cpp -o Pollutant_concentration
+
+./Pollutant_concentration
+
+g++ ./concPlotter.cpp -o ./concPlotter -std=c++11 -DWITHOUT_NUMPY -I/usr/include/python3.11 -lpython3.11
 
 ./concPlotter

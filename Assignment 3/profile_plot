@@ -1,3 +1,7 @@
+g++ ./GVF_flow_profile.cpp -o ./GVF_flow_profile
+
+./GVF_flow_profile
+
 g++ profilePlotter.cpp -o profilePlotter -std=c++11 -DWITHOUT_NUMPY -I/usr/include/python3.11 -lpython3.11
 
 ./profilePlotter
